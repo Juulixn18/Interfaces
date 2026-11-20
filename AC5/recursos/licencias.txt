@@ -1,0 +1,22 @@
+RECURSOS GRÁFICOS Y LICENCIAS - PERFUMERÍA ESENCIA
+
+1. FOTOGRAFÍA 1 (foto1.jpg)
+- Autor/a: Hamza nouasria
+- Licencia: Licencia Unsplash / Pexels (uso gratuito sin atribución obligatoria)
+- Enlace original: https://unsplash.com/es/fotos/una-botella-de-perfume-encima-de-una-cama-Kf4gB2rslgQ
+
+2. FOTOGRAFÍA 2 (foto2.jpg)
+- Autor/a: Seval torun
+- Licencia: Licencia Unsplash / Pexels (uso gratuito sin atribución obligatoria)
+- Enlace original: https://unsplash.com/es/fotos/una-botella-de-alcohol-jiySrY02HV8
+
+3. FOTOGRAFÍA 3 (foto3.jpg)
+- Autor/a: Abdulrhman alkady
+- Licencia: Licencia Unsplash / Pexels (uso gratuito sin atribución obligatoria)
+- Enlace original: https://www.pexels.com/photo/vial-of-perfumes-7850600/
+
+4. ICONO DE MARCA (icono-marca.svg)
+- Nombre: diamond
+- Autor/a: Google (Material Symbols)
+- Licencia: Apache License 2.0
+- Enlace original: https://fonts.google.com/icons?selected=Material+Symbols+Outlined:diamond

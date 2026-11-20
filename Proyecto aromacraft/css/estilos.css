@@ -1,0 +1,313 @@
+/* Modelo de caja global */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #1A1A1A;
+    color: #F4F1EA;
+    font-family: 'Playfair', serif;
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    font-family: 'Playfair Display SC', serif;
+    font-weight: 400;
+    color: #F4F1EA;
+}
+
+/* Cabecera fija */
+header.cabecera {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 75px;
+    background-color: #1A1A1A;
+    border-bottom: 1px solid #2C3E35;
+    padding: 0 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-family: 'Playfair Display SC', serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #F4F1EA;
+    text-decoration: none;
+}
+
+/* Selector descendiente */
+.menu ul {
+    list-style: none;
+    display: flex;
+    gap: 1.8rem;
+}
+
+.menu a {
+    color: #E8D5C4;
+    text-decoration: none;
+    font-size: 1rem;
+    padding-bottom: 3px;
+    border-bottom: 2px solid transparent;
+}
+
+/* Pseudo-clase hover */
+.menu a:hover {
+    color: #F4F1EA;
+    border-bottom-color: #8B0000;
+}
+
+/* Compensación del header fijo */
+main.principal {
+    padding-top: 75px;
+}
+
+/* Portada */
+section.portada {
+    max-width: 1050px;
+    margin: 0 auto;
+    padding: 5.5rem 5% 4.5rem 5%;
+    text-align: center;
+    border-bottom: 1px solid #2C3E35;
+}
+
+.etiqueta-superior {
+    color: #E8D5C4;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    margin-bottom: 1rem;
+}
+
+section.portada h1 {
+    font-size: 2.5rem;
+    line-height: 1.2;
+    margin-bottom: 1.2rem;
+}
+
+.texto-portada {
+    color: #E8D5C4;
+    font-size: 1.1rem;
+    max-width: 700px;
+    margin: 0 auto 2rem auto;
+}
+
+.botones-portada {
+    display: flex;
+    justify-content: center;
+    gap: 1.2rem;
+    flex-wrap: wrap;
+}
+
+.boton-rojo {
+    display: inline-block;
+    background-color: #8B0000;
+    color: #F4F1EA;
+    text-decoration: none;
+    padding: 0.85rem 1.8rem;
+    border: 1px solid #8B0000;
+    font-family: 'Playfair Display SC', serif;
+}
+
+.boton-rojo:hover {
+    background-color: #660000;
+    border-color: #E8D5C4;
+}
+
+.boton-borde {
+    display: inline-block;
+    background-color: transparent;
+    color: #F4F1EA;
+    text-decoration: none;
+    padding: 0.85rem 1.8rem;
+    border: 1px solid #E8D5C4;
+    font-family: 'Playfair Display SC', serif;
+}
+
+.boton-borde:hover {
+    background-color: #E8D5C4;
+    color: #1A1A1A;
+}
+
+/* Secciones generales */
+.tendencias,
+.creador,
+.asesoria {
+    max-width: 1150px;
+    margin: 0 auto;
+    padding: 4rem 5%;
+}
+
+.titulo-seccion {
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+
+.titulo-seccion h2 {
+    font-size: 1.9rem;
+    margin-bottom: 0.6rem;
+}
+
+.titulo-seccion p {
+    color: #E8D5C4;
+}
+
+/* Catálogo y tarjetas */
+.lista-perfumes {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1.5rem;
+}
+
+
+article.tarjeta-perfume {
+    background-color: #2C3E35;
+    border: 1px solid #E8D5C4;
+    padding: 1.6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+article.tarjeta-perfume:hover {
+    border-color: #8B0000;
+}
+
+.uso {
+    color: #E8D5C4;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    margin-bottom: 0.6rem;
+}
+
+article.tarjeta-perfume h3 {
+    font-size: 1.3rem;
+    margin-bottom: 0.8rem;
+}
+
+.notas {
+    font-size: 0.92rem;
+    padding-bottom: 0.8rem;
+    margin-bottom: 0.8rem;
+    border-bottom: 1px solid #E8D5C4;
+}
+
+.descripcion {
+    color: #E8D5C4;
+    font-size: 0.92rem;
+    margin-bottom: 1.4rem;
+}
+
+.enlace-detalle {
+    color: #F4F1EA;
+    text-decoration: none;
+    font-weight: 600;
+    border-bottom: 1px solid #8B0000;
+    align-self: flex-start;
+}
+
+.enlace-detalle:hover {
+    color: #E8D5C4;
+}
+
+/* Pasos del creador */
+.creador {
+    border-top: 1px solid #2C3E35;
+    border-bottom: 1px solid #2C3E35;
+}
+
+.lista-pasos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+}
+
+article.paso {
+    background-color: #1A1A1A;
+    border: 1px solid #2C3E35;
+    padding: 1.5rem;
+}
+
+.num-paso {
+    display: block;
+    color: #8B0000;
+    font-family: 'Playfair Display SC', serif;
+    font-weight: 700;
+    margin-bottom: 0.4rem;
+}
+
+article.paso h3 {
+    font-size: 1.15rem;
+    margin-bottom: 0.6rem;
+}
+
+article.paso p {
+    color: #E8D5C4;
+    font-size: 0.95rem;
+}
+
+/* Bloque asesoría */
+article.caja-asesoria {
+    background-color: #2C3E35;
+    border-left: 4px solid #8B0000;
+    padding: 2.5rem;
+    text-align: center;
+}
+
+article.caja-asesoria h2 {
+    font-size: 1.7rem;
+    margin-bottom: 1rem;
+}
+
+article.caja-asesoria p {
+    max-width: 720px;
+    margin: 0 auto 1.8rem auto;
+}
+
+/* Footer */
+footer.pie {
+    border-top: 1px solid #2C3E35;
+    padding: 2.5rem 5%;
+    text-align: center;
+}
+
+.pie-info h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.4rem;
+}
+
+.pie-info p {
+    color: #E8D5C4;
+    margin-bottom: 1.2rem;
+}
+
+.pie-enlaces ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1.8rem;
+    flex-wrap: wrap;
+    margin-bottom: 1.2rem;
+}
+
+.pie-enlaces a {
+    color: #E8D5C4;
+    text-decoration: none;
+    font-size: 0.95rem;
+}
+
+.pie-enlaces a:hover {
+    color: #F4F1EA;
+    text-decoration: underline;
+}
+
+.copy {
+    color: #E8D5C4;
+    font-size: 0.85rem;
+}
