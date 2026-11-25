@@ -1,0 +1,148 @@
+/* Reset básico */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  background: linear-gradient(135deg, #000000 0%, #071124 50%, #0f294a 100%);
+  color: #f1f5f9;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* 1. ÁREA DE CABECERA */
+header {
+  background-color: #050b14;
+  text-align: center;
+  padding: 2.5rem 1rem;
+  border-bottom: 2px solid #1e3a8a;
+}
+
+header h1 {
+  font-size: 2rem;
+  color: #ffffff;
+  margin-bottom: 0.5rem;
+}
+
+header p {
+  color: #93c5fd;
+  font-size: 1.05rem;
+}
+
+/* 2. ÁREA DE NAVEGACIÓN */
+nav {
+  background-color: #0b172a;
+  padding: 0.8rem 1rem;
+  border-bottom: 1px solid #1e293b;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+nav a {
+  color: #e2e8f0;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+nav a:hover {
+  background-color: #1d4ed8;
+  color: #ffffff;
+}
+
+/* 3. ÁREA PRINCIPAL */
+main {
+  flex: 1;
+  max-width: 960px;
+  width: 90%;
+  margin: 2.5rem auto;
+  background-color: rgba(15, 23, 42, 0.75);
+  padding: 2rem;
+  border-radius: 12px;
+  border: 1px solid #1e3a8a;
+}
+
+main h2 {
+  color: #60a5fa;
+  margin-bottom: 0.5rem;
+  border-bottom: 1px solid #1e293b;
+  padding-bottom: 0.5rem;
+}
+
+main > section > p {
+  color: #cbd5e1;
+  margin-bottom: 1.8rem;
+}
+
+/* Cuadrícula de ejercicios */
+.lista-ejercicios {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+}
+
+.tarjeta {
+  background-color: #091220;
+  border: 1px solid #1e3a8a;
+  border-radius: 10px;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.tarjeta h3 {
+  color: #ffffff;
+  margin-bottom: 0.6rem;
+  font-size: 1.2rem;
+}
+
+.tarjeta p {
+  color: #94a3b8;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin-bottom: 1.2rem;
+}
+
+.boton {
+  display: inline-block;
+  text-align: center;
+  background-color: #1d4ed8;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 0.6rem 1rem;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: background-color 0.2s;
+}
+
+.boton:hover {
+  background-color: #2563eb;
+}
+
+.boton.desactivado {
+  background-color: #334155;
+  color: #94a3b8;
+  pointer-events: none;
+}
+
+/* 4. ÁREA DE PIE DE PÁGINA */
+footer {
+  background-color: #050b14;
+  text-align: center;
+  padding: 1.2rem;
+  border-top: 1px solid #1e293b;
+  color: #64748b;
+  font-size: 0.9rem;
+}

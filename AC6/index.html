@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio Imágenes - Julián Alexander</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+    <h1>Optimización de imágenes</h1>
+
+    <p><strong>Peso original (JPG):</strong> 916Kb</p>
+    <p><strong>Peso optimizado (JPG):</strong> 281Kb</p>
+    <p><strong>Porcentaje de ahorro:</strong> 69%</p>
+
+    <img 
+        src="foto1-grande.jpg" 
+        srcset="foto1.jpg 600w, foto1-grande.jpg 1200w"
+        sizes="(max-width: 600px) 100vw, 1200px"
+        alt="Colonia negra" 
+        loading="lazy"
+    >
+
+</body>
+</html>
